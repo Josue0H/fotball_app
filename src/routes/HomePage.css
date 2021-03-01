@@ -1,0 +1,46 @@
+body{
+    all:unset;
+    background-color: #f1f2f6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html, body, .container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.leagues{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 300px;
+}
+
+.title{
+    position: absolute;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+}
+
+.title h1{
+    display: flex;
+    align-self: center;
+    font-size: 50px;
+}
