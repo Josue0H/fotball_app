@@ -24,7 +24,7 @@ html, body, .container{
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    margin-top: 150px;
+    margin-top: 3rem;
     margin-bottom: 300px;
 }
 

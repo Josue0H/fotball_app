@@ -21,11 +21,11 @@ const LeaguePage = ({ match }) => {
 
     return (
         <>
-            <div className='container-fluid d-flex justify-content-center' style={{ backgroundColor: '#1b1b1b'}}>
+            <div className='container-fluid d-flex justify-content-center align-items-center' style={{ backgroundColor: '#1b1b1b'}}>
                 <h1 className='text-white'>{match.params.name}</h1>
             </div>
 
-            <div className='d-flex justify-content-center flex-wrap'>
+            <div className='d-flex justify-content-center align-items-center flex-wrap'>
                 <div className='d-flex justify-content-center'>
                     <img className='p-3' src={team.strTeamBadge} alt={team.strTeam} width='70%'/>
                 </div>
@@ -37,14 +37,14 @@ const LeaguePage = ({ match }) => {
                         {team.intFormedYear && <p>Foundation: {team.intFormedYear}</p>}
                     </div>
                 </div>
-                {team.strStadium ? <h4>Stadium: {team.strStadium}</h4> : <h4>Headquarters</h4>}
-                {
-                    team.strStadiumThumb && 
-                    <div className='d-flex justify-content-center flex-wrap'>
-                        <img className='p-3 rounded' src={team.strStadiumThumb} alt={team.strStadium} width='70%'/>
-                    </div>
-                }
-                {team.intStadiumCapacity !== 0 && <p>Capacity: {team.intStadiumCapacity}</p>}
+                    {team.strStadium ? <h4>Stadium: {team.strStadium}</h4> : null}
+                    {
+                        team.strStadiumThumb && 
+                        <div className='d-flex justify-content-center flex-wrap'>
+                            <img className='p-3' src={team.strStadiumThumb} alt={team.strStadium} width='70%'/>
+                        </div>
+                    }
+                    {team.intStadiumCapacity > 0 && <p>Capacity: {team.intStadiumCapacity}</p>}
             </div>
         </>
 

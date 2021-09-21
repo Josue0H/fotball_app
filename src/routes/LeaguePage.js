@@ -23,7 +23,7 @@ const LeaguePage = ({ history, match }) => {
     return (
         <div className='wrapper'>
             <div className='header'>
-                <h1>{match.params.name}</h1>
+                <h1 className='text-center'>{match.params.name}</h1>
             </div>
 
             {loading ? <div className="loader">

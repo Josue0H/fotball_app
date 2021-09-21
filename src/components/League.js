@@ -8,7 +8,7 @@ const League = ({
 
     const {idLeague, strLeague, strSport} = l;
     return (
-    <div className="league">
+    <div className="league" style={{ width: window.innerWidth < 500 ? '90%' : '30%'}}>
         <Link to={{
             pathname: `/league/${strLeague}`,
             state:{

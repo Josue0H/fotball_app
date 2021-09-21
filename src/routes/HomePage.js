@@ -18,16 +18,20 @@ const HomePage = () => {
     };
 
     return (
-        <section className="container">
-            <div  className="title"><h1>Leagues of the world</h1></div>
-            {loading ? <div className="loader">
-                <span className="loader_text">Loading leagues...</span>
-            </div> : (<div className="leagues">
-                {leagues.map(league => {
-                    return <League key={league.idLeague} l={league}/> 
-            })}
-            </div>)}
-        </section>
+        <div>
+            <div className='header'>
+                <h1 className='text-center'>Leagues of the World</h1>
+            </div>
+            <div>
+                {loading ? <div className="loader">
+                    <span className="loader_text">Loading leagues...</span>
+                </div> : (<div className="leagues">
+                    {leagues.map(league => {
+                        return <League key={league.idLeague} l={league} /> 
+                })}
+                </div>)}
+            </div>
+        </div>
     );
 }
 
