@@ -2,12 +2,25 @@
     background-color: #747d8c;
     width: 30%;
     margin-bottom: 20px;
-    padding:0px 20px;
+    padding:1rem;
     color:white;
     border-radius: 5px;
+    min-height: 9rem;
+    max-height: 10rem;
     box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
 }
 
 .sport{
     font-weight: 50;
+}
+
+.league a {
+    text-decoration: none;
+    all:unset;
+    color:inherit;
+    cursor: pointer;
+}
+
+.league:hover {
+    scale: 1.1;
 }

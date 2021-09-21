@@ -1,0 +1,43 @@
+.team{
+    background-color: #747d8c;
+    width: 22%;
+    padding:20px;
+    border-radius: 5px;
+    box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0,0,0,0.025);
+    margin-bottom: 20px;
+    color:white;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.team a{
+    all:unset;
+    text-decoration: none;
+}
+
+.team:hover{
+    transition: 0.5s;
+    background-color: #3b3b3b;
+}
+
+.team img{
+    max-width: 100px;
+    position: relative;
+    margin-right: 10px;
+}
+.team_data{
+    padding: 10px;
+}
+
+.team_name{
+    margin: 0;
+    font-size: 20px;
+}
+.team_location{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 50;
+    margin-left: 0;
+}
